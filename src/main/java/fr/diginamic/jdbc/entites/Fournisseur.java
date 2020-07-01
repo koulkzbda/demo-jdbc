@@ -7,7 +7,7 @@ package fr.diginamic.jdbc.entites;
 public class Fournisseur {
 	
 	/** id */
-	protected int id;
+	protected int id = 0;
 	
 	/** nom */
 	protected String nom;
@@ -18,6 +18,13 @@ public class Fournisseur {
 	 */
 	public Fournisseur(int id, String nom) {
 		this.id = id;
+		this.nom = nom;
+	}
+	
+	/** Constructeur
+	 * @param nom
+	 */
+	public Fournisseur(String nom) {
 		this.nom = nom;
 	}
 
